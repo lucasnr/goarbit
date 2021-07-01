@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoArbit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/pages/form.css" />
+  </head>
+  <body>
+    <img
+      src="./assets/img/logo.png"
+      alt="Logomarca GoArbit"
+      class="form-logo mb-4"
+    />
+    <form class="form">
+      <h1 class="form-title">Sign in to your account</h1>
+
+      <div class="px-1 px-sm-3">
+        <div class="mb-2">
+          <input type="text" placeholder="User Name" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <input type="password" placeholder="Password" class="form-control" />
+        </div>
+      </div>
+
+      <div class="mb-2 d-flex justify-content-center">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="remember-me" />
+          <label class="form-check-label" for="remember-me">
+            Remember Me
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Sign in</button>
+
+      <div class="d-flex flex-column align-items-center">
+        <a href="#" class="mt-3">Forgot Password?</a>
+        <span class="mt-2">
+          Don't have an account?
+          <a href="#">
+            <strong class="d-sm-none">Create one</strong>
+            <strong class="d-none d-sm-inline">Create an Account</strong>
+          </a>
+        </span>
+        <a href="#" class="mt-2">
+          <strong>Help?</strong>
+        </a>
+      </div>
+    </form>
+    <footer class="form-footer mt-3">
+      Lost our Two FA?
+      <a href="#"><strong>Reset Two Fa</strong></a>
+    </footer>
+  </body>
+</html>
