@@ -138,11 +138,27 @@
   margin: 0px;
 }
 
+.app-card .btn {
+  background-image: linear-gradient(to bottom, #234dc4, #357fbb);
+  color: #fff;
+  border: none !important;
+  border-radius: 80rem;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+  font-size: 0.75rem;
+  font-weight: 700;
+  max-width: 13rem;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .app-search {
     max-width: 25rem;
   }
+}
 
+@media (min-width: 992px) {
   .app-aside {
     max-width: 14.625rem;
   }

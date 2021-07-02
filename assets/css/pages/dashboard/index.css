@@ -12,7 +12,7 @@
   );
   color: #fff;
   font-size: 1rem;
-  padding: 2rem 0px;
+  padding: 1rem 0px;
 }
 
 .app-slider .app-slider-arrow {
@@ -69,21 +69,10 @@
 }
 
 .app-card.app-card--gold-club .btn {
-  background-image: linear-gradient(to bottom, #234dc4, #357fbb);
-  color: #fff;
-  border: none !important;
-  border-radius: 80rem;
-  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
-  font-size: 0.75rem;
-  font-weight: 700;
   left: 50%;
-  max-width: 13rem;
-  padding: 0.75rem 1.5rem;
   position: absolute;
   top: 100%;
-  text-transform: uppercase;
   transform: translate(-50%, -50%);
-  width: 100%;
 }
 
 .app-card.app-card--total-earnings {
@@ -124,4 +113,69 @@
 
 .app-card.app-card--total-earnings .app-card-week .app-card-week-fill {
   background-color: #6facd6;
+}
+
+.app-aside .app-card {
+  border-bottom-color: #f5ac36;
+  font-size: 1rem;
+  line-height: 1;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.app-aside .app-card img {
+  height: 2.5rem;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 0.5rem;
+  width: 2.5rem;
+}
+
+.app-aside .app-card .app-card-title {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+}
+
+.app-aside .app-card.app-card--new-rent img {
+  display: block !important;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.app-aside .app-card.app-card--new-rent .app-card-title {
+  font-size: 1.5rem;
+}
+
+.app-aside .app-card.app-card--new-rent .app-card-title span {
+  color: #f5ac36;
+  font-weight: 500;
+}
+
+.app-aside .app-card.app-card--new-rent hr {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
+.app-aside .app-card.app-card--new-rent .app-card-footer strong {
+  color: #21456c;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .app-aside .app-card img {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-aside .app-card img {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .app-aside .app-aside-content {
+    margin-top: 6rem !important;
+  }
 }
