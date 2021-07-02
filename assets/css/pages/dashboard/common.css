@@ -1,0 +1,79 @@
+.app {
+  background-image: url(../../../img/background-2.png);
+  background-position: top center;
+  background-size: cover;
+  color: #646464;
+  display: flex;
+  font-size: 0.875rem;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem 0px;
+}
+
+.app-main {
+  max-width: 42.625rem;
+  width: 100%;
+}
+
+.app .container {
+  max-width: 78rem !important;
+}
+
+.app-logo {
+  width: 8.875rem;
+}
+
+.app-search {
+  position: relative;
+  width: 100%;
+}
+
+.app-search input {
+  border: none;
+  border-radius: 0.75rem;
+  color: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  outline: none !important;
+  padding: 0.5rem 1rem;
+  padding-right: 2.5rem;
+  width: 100%;
+}
+
+.app-search .app-search-icon {
+  height: 1.5rem;
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+}
+
+.app-user {
+  color: #fff;
+  font-weight: 500;
+}
+
+.app-user .app-user-avatar {
+  border-radius: 50%;
+  height: 2rem;
+  margin-left: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+  width: 2rem;
+}
+
+.app-footer {
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .app-search {
+    max-width: 25rem;
+  }
+
+  .app-aside {
+    max-width: 14.625rem;
+  }
+}
