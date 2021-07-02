@@ -156,10 +156,16 @@
   .app-search {
     max-width: 25rem;
   }
+
+  .app-aside {
+    margin: auto;
+    max-width: 42.625rem;
+  }
 }
 
 @media (min-width: 992px) {
   .app-aside {
+    margin: 0px;
     max-width: 14.625rem;
   }
 

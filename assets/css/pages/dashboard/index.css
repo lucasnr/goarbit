@@ -119,8 +119,8 @@
   border-bottom-color: #f5ac36;
   font-size: 1rem;
   line-height: 1;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
 }
 
 .app-aside .app-card img {
@@ -138,7 +138,6 @@
 }
 
 .app-aside .app-card.app-card--new-rent img {
-  display: block !important;
   height: 3.5rem;
   width: 3.5rem;
 }
