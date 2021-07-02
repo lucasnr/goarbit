@@ -32,9 +32,9 @@
   <body class="app">
     <div class="container d-flex flex-column flex-grow-1">
       <div
-        class="d-flex flex-column-reverse flex-lg-row justify-content-between"
+        class="d-flex flex-column-reverse flex-lg-row align-items-center align-items-lg-start justify-content-between"
       >
-        <main class="app-main">
+        <main class="app-main mb-5">
           <aside class="d-flex flex-column flex-sm-row align-items-center">
             <img
               class="app-logo me-sm-3 mb-3 mb-sm-0"
@@ -43,7 +43,7 @@
             />
 
             <div class="d-flex align-items-center w-100">
-              <div class="app-search ms-sm-auto me-4">
+              <div class="app-search ms-sm-auto me-3 me-sm-4">
                 <input
                   type="text"
                   value="https://goarbit.com/auth/register?c-57988725"
@@ -67,7 +67,7 @@
                 <a href="#">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/dashboard-active.png"
+                      src="../assets/img/icons/navbar/dashboard-active.png"
                       alt="Dashboard icon"
                     />
                   </div>
@@ -78,7 +78,7 @@
                 <a href="#">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/deposit.png"
+                      src="../assets/img/icons/navbar/deposit.png"
                       alt="Deposit icon"
                     />
                   </div>
@@ -89,7 +89,7 @@
                 <a href="#">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/rent-sell-dai.png"
+                      src="../assets/img/icons/navbar/rent-sell-dai.png"
                       alt="Rent and sell DAI icon"
                     />
                   </div>
@@ -100,7 +100,7 @@
                 <a href="#">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/gold-club.png"
+                      src="../assets/img/icons/navbar/gold-club.png"
                       alt="Gold club icon"
                     />
                   </div>
@@ -111,7 +111,7 @@
                 <a href="#">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/affiliate-program.png"
+                      src="../assets/img/icons/navbar/affiliate-program.png"
                       alt="Affiliate program icon"
                     />
                   </div>
@@ -122,7 +122,7 @@
                 <a href="#">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/total-rent.png"
+                      src="../assets/img/icons/navbar/total-rent.png"
                       alt="Total rent icon"
                     />
                   </div>
@@ -133,7 +133,7 @@
                 <a href="#">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/rent-sell-dai.png"
+                      src="../assets/img/icons/navbar/rent-sell-dai.png"
                       alt="Rent and sell DAI icon"
                     />
                   </div>
@@ -143,13 +143,186 @@
               <li>
                 <a href="#">
                   <div class="app-navbar-icon">
-                    <img src="../assets/img/icons/go-tv.png" alt="GoTV icon" />
+                    <img
+                      src="../assets/img/icons/navbar/go-tv.png"
+                      alt="GoTV icon"
+                    />
                   </div>
                   <span>GoTV</span>
                 </a>
               </li>
             </ul>
           </nav>
+
+          <header class="app-slider mb-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <svg viewBox="0 0 24 24" class="app-slider-arrow">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  fill="currentColor"
+                  d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"
+                />
+              </svg>
+
+              <div class="d-flex align-items-end">
+                <img
+                  class="d-none d-sm-block"
+                  src="../assets/img/graph-1.png"
+                  alt="Replace with real graph"
+                />
+                <img
+                  class="d-none d-sm-block mx-3"
+                  src="../assets/img/icons/dai-clipboard.png"
+                  alt="DAI Clipboard"
+                />
+                <div class="d-flex flex-column">
+                  <div class="app-dai-value"><strong>5,000</strong> DAI</div>
+                  <div class="app-dai-value mt-2">
+                    <strong>5,500,000</strong> DAI
+                  </div>
+                </div>
+
+                <div class="d-flex ms-2 ms-sm-4">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"
+                      fill="rgba(83,189,0,1)"
+                    />
+                  </svg>
+                  <span>10%</span>
+                </div>
+              </div>
+
+              <svg viewBox="0 0 24 24" class="app-slider-arrow">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  fill="currentColor"
+                  d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                />
+              </svg>
+            </div>
+          </header>
+
+          <div class="app-card me-auto mb-3">
+            <h2 class="title mb-0">Summary</h2>
+          </div>
+
+          <div class="row g-3">
+            <!-- DAI Wallet -->
+            <div class="col-sm-6 col-md-4">
+              <div class="app-card">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column">
+                    <span>DAI Wallet</span>
+                    <span class="app-dai-value">
+                      <strong>52.50</strong> DAI
+                    </span>
+                  </div>
+                  <img src="../assets/img/icons/wallet.png" alt="Wallet icon" />
+                </div>
+              </div>
+            </div>
+            <!-- DAI Earning Wallet -->
+            <div class="col-sm-6 col-md-4">
+              <div class="app-card">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column">
+                    <span>DAI Earning Wallet</span>
+                    <span class="app-dai-value">
+                      <strong>43.50</strong> DAI
+                    </span>
+                  </div>
+                  <img src="../assets/img/icons/wallet.png" alt="Wallet icon" />
+                </div>
+              </div>
+            </div>
+            <!-- Contribuition Wallet -->
+            <div class="col-md-4">
+              <div class="app-card">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex flex-column">
+                    <span>Contribuition Wallet</span>
+                    <span class="app-dai-value">
+                      <strong>463.50</strong> DAI
+                    </span>
+                  </div>
+                  <img src="../assets/img/icons/wallet.png" alt="Wallet icon" />
+                </div>
+              </div>
+            </div>
+            <!-- Total Earning -->
+            <div class="col-md-7">
+              <div class="app-card app-card--total-earnings">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/img/graph-1.png"
+                    alt="Replace with the real chart"
+                  />
+                  <h3 class="app-card-title mx-2">Total Earnings</h3>
+                  <time class="mt-2">16 Jun 2021</time>
+                </div>
+
+                <span class="app-dai-value mt-3 mb-2">
+                  <strong>604,781</strong>
+                  <span>DAI</span>
+                </span>
+
+                <footer class="app-card-footer">
+                  <div class="row g-2">
+                    <div class="col-sm-6">
+                      <span class="d-block mb-2">This Week</span>
+                      <div class="d-flex align-items-center">
+                        <span class="app-dai-value">
+                          <strong>52.50</strong> DAI
+                        </span>
+                        <svg viewBox="0 0 24 24">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"
+                            fill="rgba(83,189,0,1)"
+                          />
+                        </svg>
+                        <span>2,35%</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 d-flex flex-column">
+                      <ol
+                        class="app-card-week list-unstyled my-2 mt-sm-0 d-flex justify-content-around justify-content-sm-between"
+                      >
+                        <li class="app-card-week-fill"></li>
+                        <li class="app-card-week-fill"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ol>
+                      <div class="d-flex justify-content-between mt-auto mb-1">
+                        <time>15 Jun 2021</time>
+                        <time>21 Jun 2021</time>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <!-- Gold Club -->
+            <div class="col-md-5">
+              <div class="app-card app-card--gold-club">
+                <div
+                  class="d-flex flex-column align-items-center mt-1 pt-2 pb-4"
+                >
+                  <img
+                    src="../assets/img/icons/gold-club.png"
+                    alt="Gold club icon"
+                  />
+                  <h3 class="app-card-title mt-2">Gold Club</h3>
+                  <a href="#" class="btn">New contribuition</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
         <aside class="app-aside w-100 ms-auto mb-4 mb-lg-0">
           <div class="d-flex justify-content-between align-items-center">

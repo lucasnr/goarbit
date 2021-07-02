@@ -11,6 +11,8 @@
 }
 
 .app-main {
+  display: flex;
+  flex-direction: column;
   max-width: 42.625rem;
   width: 100%;
 }
@@ -70,20 +72,22 @@
 
 .app-navbar ul {
   display: flex;
-  margin: 2rem -0.75rem 0px -0.75rem;
+  justify-content: space-between;
+  margin: 2rem -0.75rem;
   overflow-x: auto;
+  padding: 0px 0.25rem;
 }
 
 .app-navbar ul li {
   display: flex;
-  padding: 0px 0.75rem;
+  padding: 0px 0.5rem;
 }
 
 .app-navbar ul li a {
   align-items: center;
   display: flex;
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: 500;
   flex-direction: column;
   max-width: 4.25rem;
@@ -109,6 +113,29 @@
 
 .app-navbar ul .active a .app-navbar-icon {
   background-color: #6ebbed;
+}
+
+.title {
+  color: #21456c;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.app-card {
+  background-color: #fff;
+  border-bottom: 0.25rem solid #6da9d3;
+  border-radius: 0.75rem;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+  font-size: 0.625rem;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+}
+
+.app-card .app-card-title {
+  color: #21456c;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin: 0px;
 }
 
 @media (min-width: 576px) {

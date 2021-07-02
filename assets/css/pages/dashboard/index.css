@@ -1,0 +1,127 @@
+.app-slider {
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(35, 78, 196, 0.2) 10%,
+    rgba(35, 78, 196, 0.4) 25%,
+    rgba(35, 78, 196, 0.5) 35%,
+    rgba(35, 78, 196, 0.5) 65%,
+    rgba(35, 78, 196, 0.4) 75%,
+    rgba(35, 78, 196, 0.2) 90%,
+    transparent
+  );
+  color: #fff;
+  font-size: 1rem;
+  padding: 2rem 0px;
+}
+
+.app-slider .app-slider-arrow {
+  height: 2rem;
+  width: 2rem;
+}
+
+.app-slider .app-dai-value {
+  color: #f5ac36;
+  font-size: 0.875rem;
+}
+
+.app-slider .app-dai-value strong {
+  color: #fff;
+}
+
+.app-slider .app-dai-value:nth-of-type(2) {
+  font-size: 1.125rem;
+  line-height: 1.375;
+}
+
+.app-dai-value {
+  align-items: center;
+  color: #21456c;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.1875rem;
+}
+
+.app-dai-value::before {
+  background-image: url(../../../img/icons/dai-coin.png);
+  background-size: cover;
+  content: "";
+  display: inline-block;
+  height: 1em;
+  margin-bottom: 0.125rem;
+  width: 1em;
+}
+
+.app-dai-value strong {
+  margin-left: 0.375rem;
+  margin-right: 0.125rem;
+}
+
+.app-main svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.app-card.app-card--gold-club {
+  border-bottom-color: #f5ac36;
+  position: relative;
+}
+
+.app-card.app-card--gold-club .btn {
+  background-image: linear-gradient(to bottom, #234dc4, #357fbb);
+  color: #fff;
+  border: none !important;
+  border-radius: 80rem;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+  font-size: 0.75rem;
+  font-weight: 700;
+  left: 50%;
+  max-width: 13rem;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  top: 100%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.app-card.app-card--total-earnings {
+  padding-bottom: 0px;
+}
+
+.app-card.app-card--total-earnings .app-dai-value span {
+  color: #f5ac36;
+}
+
+.app-card.app-card--total-earnings .app-card-footer {
+  background-color: #f5ac36;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  color: #fff;
+  margin: 0px -1.25rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.app-card.app-card--total-earnings .app-card-footer .app-dai-value {
+  color: #fff;
+}
+
+.app-card.app-card--total-earnings .app-card-footer .app-dai-value::before {
+  background-image: url(../../../img/icons/dai-coin-white.png);
+}
+
+.app-card.app-card--total-earnings .app-card-footer .app-dai-value ~ * {
+  font-size: 1rem;
+}
+
+.app-card.app-card--total-earnings .app-card-week li {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.app-card.app-card--total-earnings .app-card-week .app-card-week-fill {
+  background-color: #6facd6;
+}
