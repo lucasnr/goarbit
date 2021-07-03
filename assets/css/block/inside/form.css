@@ -5,6 +5,8 @@
 .form {
   position: relative;
   padding-bottom: 1.5rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
   padding-top: 1.25rem;
 }
 
@@ -18,7 +20,7 @@
   border-radius: 0.625rem;
   box-shadow: none !important;
   padding: 0.625rem 1rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .form .btn {
