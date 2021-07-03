@@ -1,3 +1,7 @@
+.app-card.form {
+  border-bottom-width: 0.375rem;
+}
+
 .form {
   position: relative;
   padding-bottom: 1.5rem;
