@@ -2,7 +2,6 @@
   font-size: 0.875rem;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  padding-right: 0px;
 }
 
 .app-card .app-card-title {
@@ -42,6 +41,7 @@
 
 .app-card .app-card-icon {
   background-color: #6da9d3;
+  border-radius: 1rem;
   padding: 1rem;
 }
 
@@ -59,7 +59,6 @@
 .app-card .app-card-btn-group {
   left: 0%;
   top: 100%;
-  transform: translateX(-1.25rem);
   width: 100%;
 }
 
@@ -90,6 +89,7 @@
 @media (min-width: 576px) {
   .app-card.app-card--content {
     font-size: 1rem;
+    padding-right: 0px;
   }
 
   .app-card .app-card-icon {
@@ -114,6 +114,7 @@
 @media (min-width: 768px) {
   .app-card .app-card-btn-group {
     position: absolute;
+    transform: translateX(-1.25rem);
   }
 
   .app-card .app-card-btn-group .btn:last-of-type {
