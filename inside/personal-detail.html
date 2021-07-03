@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="../assets/css/pages/inside/common.css" />
     <link rel="stylesheet" href="../assets/css/pages/inside/account.css" />
     <link rel="stylesheet" href="../assets/css/block/inside/form.css" />
-    <link rel="stylesheet" href="../assets/css/pages/inside/tickets.css" />
   </head>
   <body class="app">
     <div class="container d-flex flex-column flex-grow-1">
@@ -156,187 +155,74 @@
             </ul>
           </nav>
 
-          <div class="row gx-4 gy-5">
-            <div class="col-sm-7 d-flex flex-column">
-              <div class="app-card me-auto mb-3">
-                <h2 class="title mb-0">Create a Ticket</h2>
-              </div>
-
-              <form class="app-card form">
-                <label for="subject">Subject *</label>
-                <select id="subject" class="form-control form-select">
-                  <option disabled selected>Enter subject</option>
-                </select>
-
-                <label for="message">Message *</label>
-                <textarea
-                  id="message"
-                  cols="30"
-                  rows="5"
-                  class="form-control"
-                  placeholder="Enter message"
-                ></textarea>
-
-                <button type="submit" class="btn">Create</button>
-              </form>
-            </div>
-            <div class="col-sm-5 d-flex flex-column">
-              <div
-                class="d-flex align-items-center justify-content-between mb-3"
-              >
-                <div class="app-card">
-                  <h2 class="title mb-0">FAQ</h2>
-                </div>
-                <select id="subject" class="form-control form-select mb-0 ms-3">
-                  <option disabled selected>Select Topic</option>
-                </select>
-              </div>
-
-              <div class="accordion" id="accordion">
-                <div class="accordion-item app-card">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      When do i receive my withdrawal bonus?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#accordion"
-                  >
-                    <div class="accordion-body">
-                      Whitdrawal bonuses pay instantly.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item app-card">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      When do i receive my binary bonus?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordion"
-                  >
-                    <div class="accordion-body">
-                      Binary bonuses pay instantly.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item app-card">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      When do i receive my direct referral bonus?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordion"
-                  >
-                    <div class="accordion-body">
-                      Binary bonuses pay instantly.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item app-card">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      What is the duration of my rank?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordion"
-                  >
-                    <div class="accordion-body">
-                      Binary bonuses pay instantly.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="app-card accordion" id="accordion-cuenta">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseCuentaOne"
-                      aria-expanded="true"
-                      aria-controls="collapseCuentaOne"
-                    >
-                      <span class="text-uppercase">Cuenta</span>
-                      <div class="d-flex order-2">
-                        <span class="badge">Closed</span>
-                        <span class="badge ms-3">
-                          <svg viewBox="0 0 24 24">
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path
-                              fill="currentColor"
-                              d="M10 3v2H5v14h14v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6zm7.707 4.707L12 13.414 10.586 12l5.707-5.707L13 3h8v8l-3.293-3.293z"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseCuentaOne"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#accordion-cuenta"
-                  >
-                    <div class="accordion-body">
-                      <div class="row g-3 align-items-center">
-                        <div class="col-sm-9">
-                          Como puedo cambiar la direccion de correo electronico,
-                          la he pedido, ya no la tengo; por favor cambiarme a
-                          hairolreyes123456@gmail.com
-                        </div>
-                        <div class="col-sm-3 text-end text-sm-center">
-                          <time>2021-06-16 17:51:56</time>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="app-card me-auto mb-3">
+            <h2 class="title mb-0">Personal Detail</h2>
           </div>
+
+          <form class="app-card form pb-5">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="username">Username *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  value="gabriel@gmail.com"
+                  placeholder="Enter username"
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  value="gabriel@gmail.com"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name"
+                  value="Gabriel"
+                  placeholder="Enter first name"
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  value="Moura"
+                  placeholder="Enter last name"
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="mobile">Mobile nº</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="mobile"
+                  placeholder="Enter mobile nº"
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="notification-settings">Notification Settings</label>
+                <select
+                  id="notification-settings"
+                  class="form-control form-select"
+                >
+                  <option selected>None</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Save</button>
+          </form>
         </main>
 
         <aside class="app-aside w-100 ms-auto mb-4 mb-lg-0">
