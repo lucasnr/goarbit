@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoArbit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/pages/inside/common.css" />
+    <link rel="stylesheet" href="../assets/css/pages/inside/account.css" />
+    <link rel="stylesheet" href="../assets/css/pages/inside/tickets.css" />
+  </head>
+  <body class="app">
+    <div class="container d-flex flex-column flex-grow-1">
+      <div
+        class="d-flex flex-column-reverse flex-lg-row align-items-center align-items-lg-start justify-content-between"
+      >
+        <main class="app-main mb-5">
+          <aside class="d-flex flex-column flex-sm-row align-items-center">
+            <img
+              class="app-logo me-sm-3 mb-3 mb-sm-0"
+              src="../assets/img/logo.png"
+              alt="GoArbit Logo"
+            />
+
+            <div class="d-flex align-items-center w-100">
+              <div class="app-search ms-sm-auto me-3 me-sm-4">
+                <input
+                  type="text"
+                  value="https://goarbit.com/auth/register?c-57988725"
+                />
+                <svg class="app-search-icon" viewBox="0 0 24 24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z"
+                  />
+                </svg>
+              </div>
+              <a href="#">
+                <img src="../assets/img/zoom.png" alt="Zoom icon" />
+              </a>
+            </div>
+          </aside>
+
+          <nav class="app-navbar">
+            <ul class="list-unstyled">
+              <li class="active">
+                <a href="./dashboard.html">
+                  <div class="app-navbar-icon">
+                    <img
+                      src="../assets/img/icons/navbar/dashboard-active.png"
+                      alt="Dashboard icon"
+                    />
+                  </div>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="./deposit.html">
+                  <div class="app-navbar-icon">
+                    <img
+                      src="../assets/img/icons/navbar/deposit.png"
+                      alt="Deposit icon"
+                    />
+                  </div>
+                  <span>Deposit</span>
+                </a>
+              </li>
+              <li>
+                <a href="./rent-dai.html">
+                  <div class="app-navbar-icon">
+                    <img
+                      src="../assets/img/icons/navbar/rent-sell-dai.png"
+                      alt="Rent and sell DAI icon"
+                    />
+                  </div>
+                  <span>Rent DAI</span>
+                </a>
+              </li>
+              <li>
+                <a href="./gold-club">
+                  <div class="app-navbar-icon">
+                    <img
+                      src="../assets/img/icons/navbar/gold-club.png"
+                      alt="Gold club icon"
+                    />
+                  </div>
+                  <span>Gold Club</span>
+                </a>
+              </li>
+              <li>
+                <a href="./affiliate-program.html">
+                  <div class="app-navbar-icon">
+                    <img
+                      src="../assets/img/icons/navbar/affiliate-program.png"
+                      alt="Affiliate program icon"
+                    />
+                  </div>
+                  <span>Affiliate Program</span>
+                </a>
+              </li>
+              <li>
+                <a href="./total-rent.html">
+                  <div class="app-navbar-icon">
+                    <img
+                      src="../assets/img/icons/navbar/total-rent.png"
+                      alt="Total rent icon"
+                    />
+                  </div>
+                  <span>Total Rent</span>
+                </a>
+              </li>
+              <li>
+                <a href="./sell-dai.html">
+                  <div class="app-navbar-icon">
+                    <img
+                      src="../assets/img/icons/navbar/rent-sell-dai.png"
+                      alt="Rent and sell DAI icon"
+                    />
+                  </div>
+                  <span>Sell DAI</span>
+                </a>
+              </li>
+              <li>
+                <a href="./gotv.html">
+                  <div class="app-navbar-icon">
+                    <img
+                      src="../assets/img/icons/navbar/go-tv.png"
+                      alt="GoTV icon"
+                    />
+                  </div>
+                  <span>GoTV</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="row gx-4 gy-5">
+            <div class="col-sm-7 d-flex flex-column">
+              <div class="app-card me-auto mb-3">
+                <h2 class="title mb-0">Create a Ticket</h2>
+              </div>
+
+              <form class="app-card form">
+                <label for="subject">Subject *</label>
+                <select id="subject" class="form-control form-select">
+                  <option disabled selected>Enter subject</option>
+                </select>
+
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  class="form-control"
+                  placeholder="Enter message"
+                ></textarea>
+
+                <button type="submit" class="btn">Create</button>
+              </form>
+            </div>
+            <div class="col-sm-5 d-flex flex-column">
+              <div class="app-card me-auto mb-3">
+                <h2 class="title mb-0">FAQ</h2>
+              </div>
+
+              <div class="accordion" id="accordion">
+                <div class="accordion-item app-card">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      When do i receive my withdrawal bonus?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="accordion-body">
+                      Whitdrawal bonuses pay instantly.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item app-card">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      When do i receive my binary bonus?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="accordion-body">
+                      Binary bonuses pay instantly.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item app-card">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      When do i receive my direct referral bonus?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="accordion-body">
+                      Binary bonuses pay instantly.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item app-card">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      What is the duration of my rank?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="accordion-body">
+                      Binary bonuses pay instantly.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <aside class="app-aside w-100 ms-auto mb-4 mb-lg-0">
+          <header class="d-flex justify-content-between align-items-center">
+            <img src="../assets/img/english.png" />
+
+            <div class="app-user">
+              <span class="app-user-name">Gabriel</span>
+              <div class="app-user-avatar">
+                <img src="../assets/img/avatar.png" alt="Gabriel" />
+              </div>
+            </div>
+          </header>
+
+          <aside class="app-account-menu">
+            <header class="app-account-menu-header">
+              <div class="app-account-menu-avatar">
+                <img src="../assets/img/avatar.png" alt="Gabriel" />
+              </div>
+              <div class="d-flex flex-column">
+                <h4 class="app-account-menu-greetings mb-1">Hi, Gabriel</h4>
+                <a
+                  href="mailto:gabriel@goarbit.com"
+                  class="app-account-menu-email text-truncate"
+                  target="_blank"
+                >
+                  gabriel@goarbit.com
+                </a>
+              </div>
+            </header>
+            <div class="py-3 px-5">
+              <nav class="app-account-menu-navbar">
+                <div class="d-flex justify-content-center">
+                  <a href="./dashboard.html">
+                    <img
+                      src="../assets/img/icons/menu/dashboard.png"
+                      alt="Dashboard icon"
+                    />
+                    <span>Dashboard</span>
+                  </a>
+                  <a href="./profile.html">
+                    <img
+                      src="../assets/img/icons/menu/profile.png"
+                      alt="Profile icon"
+                    />
+                    <span>Profile</span>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a href="./tickets.html">
+                    <img
+                      src="../assets/img/icons/menu/tickets.png"
+                      alt="Tickets icon"
+                    />
+                    <span>Tickets</span>
+                  </a>
+                  <a href="./2fa.html">
+                    <img
+                      src="../assets/img/icons/menu/2fa.png"
+                      alt="2FA icon"
+                    />
+                    <span>2FA</span>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a href="./personal-detail.html">
+                    <img
+                      src="../assets/img/icons/menu/personal-detail.png"
+                      alt="Personal detail icon"
+                    />
+                    <span>Personal Detail</span>
+                  </a>
+                  <a href="./password.html">
+                    <img
+                      src="../assets/img/icons/menu/password.png"
+                      alt="Password icon"
+                    />
+                    <span>Password</span>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a href="./financial.html">
+                    <img
+                      src="../assets/img/icons/menu/financial.png"
+                      alt="Financial icon"
+                    />
+                    <span>Financial</span>
+                  </a>
+                  <a href="./affiliate-program.html">
+                    <img
+                      src="../assets/img/icons/menu/affiliate-program.png"
+                      alt="Affiliate program icon"
+                    />
+                    <span>Affiliate Program</span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+            <a href="../index.html" class="btn">
+              <svg viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  fill="currentColor"
+                  d="M4 18h2v2h12V4H6v2H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3zm2-7h7v2H6v3l-5-4 5-4v3z"
+                />
+              </svg>
+              <span>Logout</span>
+            </a>
+
+            <button class="app-account-menu-dismiss">
+              <svg viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  fill="currentColor"
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9.414l2.828-2.829 1.415 1.415L13.414 12l2.829 2.828-1.415 1.415L12 13.414l-2.828 2.829-1.415-1.415L10.586 12 7.757 9.172l1.415-1.415L12 10.586z"
+                />
+              </svg>
+            </button>
+          </aside>
+        </aside>
+      </div>
+
+      <footer class="app-footer mt-auto">
+        <span class="d-block text-center text-uppercase">
+          Copyright @ 2021 GoArbit.
+          <br class="d-md-none" />
+          All rights reserved
+        </span>
+      </footer>
+
+      <script src="../assets/js/account-menu.js"></script>
+    </div>
+  </body>
+</html>

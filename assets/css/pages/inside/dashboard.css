@@ -38,6 +38,10 @@
   color: #21456c;
 }
 
+.app-card {
+  font-size: 0.625rem;
+}
+
 .app-card.app-card--gold-club {
   border-bottom-color: #f5ac36;
   position: relative;
