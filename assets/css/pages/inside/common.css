@@ -8,7 +8,6 @@
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  padding: 1rem 0px;
 }
 
 .app-main {
@@ -20,6 +19,9 @@
 
 .app .container {
   max-width: 78rem !important;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  overflow-x: hidden;
 }
 
 .app-logo {
