@@ -1,6 +1,10 @@
-const menu = document.querySelector('.app-account-menu');
-const appUserAvatar = document.querySelector('.app-user .app-user-avatar');
+const accountMenu = document.querySelector('.app-account-menu');
+const userAvatar = document.querySelector('.app-user .app-user-avatar');
+const dismissButton = accountMenu.querySelector('.app-account-menu-dismiss');
 
-appUserAvatar.onclick = () => {
-  menu.classList.toggle('active');
-};
+function toggleAccountMenu() {
+  accountMenu.classList.toggle('active');
+}
+
+userAvatar.onclick = toggleAccountMenu;
+dismissButton.onclick = toggleAccountMenu;
