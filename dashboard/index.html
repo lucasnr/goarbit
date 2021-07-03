@@ -27,6 +27,7 @@
 
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <link rel="stylesheet" href="../assets/css/pages/dashboard/common.css" />
+    <link rel="stylesheet" href="../assets/css/pages/dashboard/account.css" />
     <link rel="stylesheet" href="../assets/css/pages/dashboard/index.css" />
   </head>
   <body class="app">
@@ -330,11 +331,9 @@
 
             <div class="app-user">
               <span class="app-user-name">Gabriel</span>
-              <img
-                src="../assets/img/avatar.png"
-                alt="Gabriel"
-                class="app-user-avatar"
-              />
+              <div class="app-user-avatar">
+                <img src="../assets/img/avatar.png" alt="Gabriel" />
+              </div>
             </div>
           </header>
           <div class="app-aside-content my-3 my-lg-0">
@@ -407,6 +406,102 @@
               </div>
             </div>
           </div>
+
+          <aside class="app-account-menu">
+            <header class="app-account-menu-header">
+              <div class="app-account-menu-avatar">
+                <img src="../assets/img/avatar.png" alt="Gabriel" />
+              </div>
+              <div class="d-flex flex-column">
+                <h4 class="app-account-menu-greetings mb-1">Hi, Gabriel</h4>
+                <a
+                  href="mailto:gabriel@goarbit.com"
+                  class="app-account-menu-email text-truncate"
+                  target="_blank"
+                >
+                  gabriel@goarbit.com
+                </a>
+              </div>
+            </header>
+            <div class="py-3 px-5">
+              <nav class="app-account-menu-navbar">
+                <div class="d-flex justify-content-center">
+                  <a href="./index.html">
+                    <img
+                      src="../assets/img/icons/menu/dashboard.png"
+                      alt="Dashboard icon"
+                    />
+                    <span>Dashboard</span>
+                  </a>
+                  <a href="./profile.html">
+                    <img
+                      src="../assets/img/icons/menu/profile.png"
+                      alt="Profile icon"
+                    />
+                    <span>Profile</span>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a href="./tickets.html">
+                    <img
+                      src="../assets/img/icons/menu/tickets.png"
+                      alt="Tickets icon"
+                    />
+                    <span>Tickets</span>
+                  </a>
+                  <a href="./2fa.html">
+                    <img
+                      src="../assets/img/icons/menu/2fa.png"
+                      alt="2FA icon"
+                    />
+                    <span>2FA</span>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a href="./personal-detail.html">
+                    <img
+                      src="../assets/img/icons/menu/personal-detail.png"
+                      alt="Personal detail icon"
+                    />
+                    <span>Personal Detail</span>
+                  </a>
+                  <a href="./password.html">
+                    <img
+                      src="../assets/img/icons/menu/password.png"
+                      alt="Password icon"
+                    />
+                    <span>Password</span>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a href="./financial.html">
+                    <img
+                      src="../assets/img/icons/menu/financial.png"
+                      alt="Financial icon"
+                    />
+                    <span>Financial</span>
+                  </a>
+                  <a href="./affiliate-program.html">
+                    <img
+                      src="../assets/img/icons/menu/affiliate-program.png"
+                      alt="Affiliate program icon"
+                    />
+                    <span>Affiliate Program</span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+            <a href="../index.html" class="btn">
+              <svg viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  fill="currentColor"
+                  d="M4 18h2v2h12V4H6v2H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3zm2-7h7v2H6v3l-5-4 5-4v3z"
+                />
+              </svg>
+              <span>Logout</span>
+            </a>
+          </aside>
         </aside>
       </div>
       <footer class="app-footer mt-auto">
@@ -416,6 +511,8 @@
           All rights reserved
         </span>
       </footer>
+
+      <script src="../assets/js/account-menu.js"></script>
     </div>
   </body>
 </html>

@@ -58,11 +58,6 @@
   margin-right: 0.125rem;
 }
 
-.app-main svg {
-  height: 1.25rem;
-  width: 1.25rem;
-}
-
 .app-card.app-card--gold-club {
   border-bottom-color: #f5ac36;
   position: relative;

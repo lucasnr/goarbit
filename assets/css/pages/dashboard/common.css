@@ -7,6 +7,7 @@
   font-size: 0.875rem;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
   padding: 1rem 0px;
 }
 
@@ -52,17 +53,39 @@
 }
 
 .app-user {
+  align-items: center;
   color: #fff;
+  display: flex;
   font-weight: 500;
 }
 
 .app-user .app-user-avatar {
   border-radius: 50%;
+  cursor: pointer;
   height: 2rem;
-  margin-left: 0.5rem;
+  margin-left: 0.75rem;
+  position: relative;
+  width: 2rem;
+}
+
+.app-user .app-user-avatar img {
+  height: 100%;
   object-fit: cover;
   object-position: center;
-  width: 2rem;
+  width: 100%;
+}
+
+.app-user .app-user-avatar::before {
+  background-color: #fff;
+  bottom: -5%;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  left: -10%;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 .app-footer {
@@ -121,6 +144,25 @@
   font-weight: 700;
 }
 
+.app .btn {
+  background-image: linear-gradient(to bottom, #234dc4, #357fbb);
+  color: #fff;
+  border: none !important;
+  border-radius: 80rem;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+  font-size: 0.75rem;
+  font-weight: 700;
+  max-width: 13rem;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.app svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 .app-card {
   background-color: #fff;
   border-bottom: 0.25rem solid #6da9d3;
@@ -138,25 +180,13 @@
   margin: 0px;
 }
 
-.app-card .btn {
-  background-image: linear-gradient(to bottom, #234dc4, #357fbb);
-  color: #fff;
-  border: none !important;
-  border-radius: 80rem;
-  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
-  font-size: 0.75rem;
-  font-weight: 700;
-  max-width: 13rem;
-  padding: 0.75rem 1.5rem;
-  text-transform: uppercase;
-  width: 100%;
-}
-
 @media (min-width: 576px) {
   .app-search {
     max-width: 25rem;
   }
+}
 
+@media (min-width: 768px) {
   .app-aside {
     margin: auto;
     max-width: 42.625rem;
