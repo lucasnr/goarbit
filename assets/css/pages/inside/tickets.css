@@ -12,7 +12,7 @@
   margin-bottom: 0.5rem;
 }
 
-.form .form-control {
+.app-main .form-control {
   background-color: #f6f6f6;
   border: none;
   border-radius: 0.625rem;
@@ -63,7 +63,7 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-5-9h10v2H7v-2z' fill='rgba(0,51,89,1)'/%3E%3C/svg%3E");
 }
 
-.app-card.accordion-item .accordion-button::after {
+.app-main .accordion-button::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z' fill='rgba(0,51,89,1)'/%3E%3C/svg%3E");
 }
 
@@ -74,4 +74,47 @@
   color: #fff;
   font-weight: 400;
   padding: 0.5rem 0.75rem 0.25rem 0.75rem;
+}
+
+.app-card.accordion {
+  background-color: #21456c;
+  border-bottom-color: #21456c;
+  padding: 0px;
+}
+
+.app-card.accordion,
+.app-card.accordion .accordion-item {
+  border-radius: 0.75rem !important;
+  border: none;
+  overflow: hidden;
+}
+
+.app-card.accordion .accordion-button {
+  border-radius: 0.75rem;
+  color: #21456c;
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.app-card.accordion .accordion-button::after {
+  background-size: cover;
+  height: 1.5rem;
+  margin-left: 0px;
+  width: 1.5rem;
+}
+
+.app-card.accordion .accordion-item {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 400;
+}
+
+.app-card.accordion .badge {
+  background-color: #21456c;
+}
+
+.app-card.accordion .badge svg {
+  height: 0.875rem;
+  width: 0.875rem;
 }

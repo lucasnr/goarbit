@@ -180,8 +180,15 @@
               </form>
             </div>
             <div class="col-sm-5 d-flex flex-column">
-              <div class="app-card me-auto mb-3">
-                <h2 class="title mb-0">FAQ</h2>
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <div class="app-card">
+                  <h2 class="title mb-0">FAQ</h2>
+                </div>
+                <select id="subject" class="form-control form-select mb-0 ms-3">
+                  <option disabled selected>Select Topic</option>
+                </select>
               </div>
 
               <div class="accordion" id="accordion">
@@ -274,6 +281,55 @@
                   >
                     <div class="accordion-body">
                       Binary bonuses pay instantly.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="app-card accordion" id="accordion-cuenta">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseCuentaOne"
+                      aria-expanded="true"
+                      aria-controls="collapseCuentaOne"
+                    >
+                      <span class="text-uppercase">Cuenta</span>
+                      <div class="d-flex order-2">
+                        <span class="badge">Closed</span>
+                        <span class="badge ms-3">
+                          <svg viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              fill="currentColor"
+                              d="M10 3v2H5v14h14v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6zm7.707 4.707L12 13.414 10.586 12l5.707-5.707L13 3h8v8l-3.293-3.293z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseCuentaOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordion-cuenta"
+                  >
+                    <div class="accordion-body">
+                      <div class="row g-3 align-items-center">
+                        <div class="col-sm-9">
+                          Como puedo cambiar la direccion de correo electronico,
+                          la he pedido, ya no la tengo; por favor cambiarme a
+                          hairolreyes123456@gmail.com
+                        </div>
+                        <div class="col-sm-3 text-end text-sm-center">
+                          <time>2021-06-16 17:51:56</time>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
