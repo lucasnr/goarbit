@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <link rel="stylesheet" href="../assets/css/pages/inside/common.css" />
     <link rel="stylesheet" href="../assets/css/pages/inside/account.css" />
-    <link rel="stylesheet" href="../assets/css/pages/inside/profile.css" />
+    <link rel="stylesheet" href="../assets/css/block/inside/form.css" />
+    <link rel="stylesheet" href="../assets/css/pages/inside/gold-club.css" />
   </head>
   <body class="app">
     <div class="container d-flex flex-column flex-grow-1">
@@ -64,11 +65,11 @@
 
           <nav class="app-navbar">
             <ul class="list-unstyled">
-              <li class="active">
+              <li>
                 <a href="./dashboard.html">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/navbar/dashboard-active.png"
+                      src="../assets/img/icons/navbar/dashboard.png"
                       alt="Dashboard icon"
                     />
                   </div>
@@ -97,11 +98,11 @@
                   <span>Rent DAI</span>
                 </a>
               </li>
-              <li>
+              <li class="active">
                 <a href="./gold-club.html">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/navbar/gold-club.png"
+                      src="../assets/img/icons/navbar/gold-club-active.png"
                       alt="Gold club icon"
                     />
                   </div>
@@ -155,95 +156,116 @@
             </ul>
           </nav>
 
-          <div class="app-card me-auto mb-3">
-            <h2 class="title mb-0">Profile</h2>
+          <div class="row gx-4 gy-3 mb-3">
+            <div class="col-sm-6 text-center">
+              <div class="app-card py-4 app-card--reverse">
+                <img
+                  src="../assets/img/icons/gold-club.png"
+                  alt="Gold club icon"
+                />
+                <h3 class="app-card-title px-3 mt-3">
+                  Make a contribuition for special benefits!
+                </h3>
+              </div>
+            </div>
+            <div class="col-sm-6 text-center">
+              <div class="app-card app-card--amount py-5 pt-sm-4 py-md-3">
+                <h3 class="app-card-title">Amount Applied</h3>
+                <h3 class="app-dai-value justify-content-center my-2">
+                  <strong>50,00</strong>
+                  <span>DAI</span>
+                </h3>
+                <span>5% of all active contracts rent.</span>
+                <ul class="list-unstyled mb-0 text-start mt-3">
+                  <li>1.5% ROI</li>
+                  <li>10% Referral Bonus</li>
+                  <li>10% Matching Bonus</li>
+                </ul>
+                <button class="btn">
+                  <img
+                    src="../assets/img/icons/square.png"
+                    alt="Square icon"
+                    class="me-1"
+                  />
+                  Contribute now
+                </button>
+              </div>
+            </div>
           </div>
 
-          <div class="app-card app-card--content">
-            <div class="row g-5 g-sm-3">
-              <div class="col-sm-4 position-relative text-center">
-                <div class="d-flex flex-column align-items-center pb-3">
-                  <div class="app-card-avatar mb-3">
-                    <img
-                      src="../assets/img/avatar.png"
-                      alt="Gabriel"
-                      class="app-card-avatar-image"
-                    />
-                    <img
-                      src="../assets/img/icons/gold-club.png"
-                      alt="Gold club icon"
-                      class="app-card-avatar-badge"
-                    />
-                  </div>
-                  <h3 class="app-card-title text-uppercase">Gabriel Morais</h3>
-                  <span class="app-card-joined fw-regular">
-                    Joined on: 02 Mar 2021
-                  </span>
-                  <address class="app-card-address mb-0">
-                    <strong>Country:</strong> Dominican Replubic
-                  </address>
-                </div>
+          <div class="app-card me-auto mb-3">
+            <h2 class="title mb-0">History</h2>
+          </div>
 
-                <div class="app-card-btn-group">
-                  <button class="btn">
-                    Change photo
-                    <svg viewBox="0 0 24 24" class="ms-2">
-                      <path fill="none" d="M0 0h24v24H0z" />
-                      <path
-                        fill="currentColor"
-                        d="M9.828 5l-2 2H4v12h16V7h-3.828l-2-2H9.828zM9 3h6l2 2h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4l2-2zm3 15a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
-                      />
-                    </svg>
-                  </button>
-                  <button class="btn mt-sm-3 mt-md-0">
-                    <svg viewBox="0 0 24 24">
-                      <path fill="none" d="M0 0h24v24H0z" />
-                      <path
-                        fill="currentColor"
-                        d="M19.586 21H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h.586L1.393 2.808l1.415-1.415 19.799 19.8-1.415 1.414L19.586 21zm-14-14H4v12h13.586l-2.18-2.18A5.5 5.5 0 0 1 7.68 9.094L5.586 7zm3.524 3.525a3.5 3.5 0 0 0 4.865 4.865L9.11 10.525zM22 17.785l-2-2V7h-3.828l-2-2H9.828l-.307.307-1.414-1.414L9 3h6l2 2h4a1 1 0 0 1 1 1v11.786zM11.263 7.05a5.5 5.5 0 0 1 6.188 6.188l-2.338-2.338a3.515 3.515 0 0 0-1.512-1.512l-2.338-2.338z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="col-sm-4 d-flex flex-column">
-                <div class="d-flex flex-column align-items-center my-auto">
-                  <img
-                    src="../assets/img/icons/rewards.png"
-                    alt="Rewards icon"
-                    class="app-card-rewards-icon mb-3"
-                  />
-                  <span>Reward Points</span>
-                  <h3 class="app-card-title">499,530</h3>
-                </div>
-              </div>
-              <div class="col-sm-4 app-card-totals">
-                <div
-                  class="d-flex flex-column align-items-center justify-content-center h-100"
+          <div class="accordion" id="accordion">
+            <div class="app-card accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
                 >
-                  <div class="app-card-icon mb-2">
-                    <img
-                      src="../assets/img/icons/navbar/deposit-active.png"
-                      alt="Deposit icon"
-                    />
-                  </div>
-                  <span>Total Investments</span>
-                  <span class="app-dai-value">
-                    <strong>360,700</strong>
-                    <span>DAI</span>
+                  <span class="app-card-title text-uppercase">
+                    Contribuition
                   </span>
+                  <span class="app-dai-value order-2">
+                    <strong>30,00</strong>
+                    <span class="fw-bold">DAI</span>
+                  </span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordion"
+              >
+                <div class="accordion-body">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center"
+                  >
+                    <strong>Gold Club</strong>
+                    <span class="badge my-2 my-sm-0">Contribuition Wallet</span>
+                    <time>2021-06-16 17:51:56</time>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                  <div class="app-card-icon mt-3 mb-2">
-                    <img
-                      src="../assets/img/icons/navbar/total-rent-active.png"
-                      alt="Total rent icon"
-                    />
-                  </div>
-                  <span>Total Investments</span>
-                  <span class="app-dai-value">
-                    <strong>360,700</strong>
-                    <span>DAI</span>
+            <div class="app-card accordion-item mt-3">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <span class="app-card-title text-uppercase">
+                    Contribuition
                   </span>
+                  <span class="app-dai-value order-2">
+                    <strong>45,00</strong>
+                    <span class="fw-bold">DAI</span>
+                  </span>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="accordion-body">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center"
+                  >
+                    <strong>Gold Club</strong>
+                    <span class="badge my-2 my-sm-0">Contribuition Wallet</span>
+                    <time>2021-06-16 17:51:56</time>
+                  </div>
                 </div>
               </div>
             </div>

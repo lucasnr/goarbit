@@ -191,6 +191,17 @@
   margin: 0px;
 }
 
+.app-card.app-card--reverse {
+  background-color: #6da9d3;
+  border-bottom-color: #fff;
+  color: #fff;
+}
+
+.app-card.app-card--reverse .title,
+.app-card.app-card--reverse .app-card-title {
+  color: inherit;
+}
+
 .app-dai-value {
   align-items: center;
   color: #21456c;
