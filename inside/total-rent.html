@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="../assets/css/pages/inside/common.css" />
     <link rel="stylesheet" href="../assets/css/pages/inside/account.css" />
     <link rel="stylesheet" href="../assets/css/block/inside/form.css" />
-    <link rel="stylesheet" href="../assets/css/pages/inside/sell-dai.css" />
+    <link rel="stylesheet" href="../assets/css/pages/inside/total-rent.css" />
   </head>
   <body class="app">
     <div class="container d-flex flex-column flex-grow-1">
@@ -120,22 +120,22 @@
                   <span>Affiliate Program</span>
                 </a>
               </li>
-              <li>
+              <li class="active">
                 <a href="./total-rent.html">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/navbar/total-rent.png"
+                      src="../assets/img/icons/navbar/total-rent-active.png"
                       alt="Total rent icon"
                     />
                   </div>
                   <span>Total Rent</span>
                 </a>
               </li>
-              <li class="active">
+              <li>
                 <a href="./sell-dai.html">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/navbar/rent-sell-dai-active.png"
+                      src="../assets/img/icons/navbar/rent-sell-dai.png"
                       alt="Rent and sell DAI icon"
                     />
                   </div>
@@ -156,55 +156,30 @@
             </ul>
           </nav>
 
-          <div class="app-card me-auto mb-3 py-2">
-            <h2 class="title mb-0 d-flex align-items-center">
-              <img
-                src="../assets/img/icons/dai-bitcoin-1.png"
-                alt="Dai bitcoin exchange"
-                class="me-2"
-              />
-              Sell DAI
-            </h2>
-          </div>
-          <div class="row gx-4 gy-3">
-            <div class="col-sm-7">
-              <div
-                class="app-card app-card--wallet d-flex flex-column justify-content-center h-100"
-              >
-                <h3 class="app-card-title">DAI Wallet</h3>
-                <span class="mb-2">Balance</span>
-                <span class="app-dai-value">
-                  <strong>3.000.000,00</strong>
-                  <span>DAI</span>
-                </span>
+          <div class="row mb-3 justify-content-between">
+            <div class="col-sm-9 col-md-8">
+              <div class="d-flex flex-column flex-sm-row">
+                <div class="app-card me-sm-3 mb-2 mb-sm-0">
+                  <h2 class="title mb-0 text-nowrap">Your Finances</h2>
+                </div>
+
+                <select class="app-card form-select me-sm-3 mb-2 mb-sm-0">
+                  <option selected>All Wallets</option>
+                </select>
+
+                <select class="app-card form-select mb-2 mb-sm-0">
+                  <option selected>All Finances</option>
+                </select>
               </div>
             </div>
-            <div class="col-sm-5">
-              <form class="app-card form">
-                <h3 class="app-card-title text-center mb-2">Amount</h3>
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  placeholder="Enter amount"
-                  value="30.000,00"
-                />
-                <button class="btn">
-                  <img
-                    src="../assets/img/icons/dai-bitcoin-2.png"
-                    alt="Dai bitcoin exchange"
-                    class="me-2"
-                  />
-                  Sell Now
-                </button>
-              </form>
+            <div class="col-sm-3 text-center">
+              <div class="app-card app-card--reverse">
+                <h2 class="title mb-0">Show All</h2>
+              </div>
             </div>
           </div>
-
-          <div class="app-card me-auto mt-5 mb-3">
-            <h2 class="title mb-0">All Sell Requests</h2>
-          </div>
           <div class="accordion" id="accordion">
-            <div class="app-card accordion-item accordion-item-warning">
+            <div class="app-card accordion-item">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -214,14 +189,7 @@
                   aria-expanded="false"
                   aria-controls="collapseOne"
                 >
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/img/icons/dai-bitcoin-3.png"
-                      alt="Dai bitcoin exchange"
-                      class="me-2"
-                    />
-                    <span class="app-card-title text-uppercase">Sell DAI</span>
-                  </div>
+                  <span class="app-card-title text-uppercase">Roi income</span>
                   <span class="app-dai-value order-2">
                     <strong>30,00</strong>
                     <span class="fw-bold">DAI</span>
@@ -233,46 +201,26 @@
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordion"
               >
-                <div class="accordion-body">
-                  <div class="row g-2 align-items-center text-md-center">
-                    <div class="col-sm-6 col-md-2">
-                      <span class="badge d-inline-flex align-items-center">
-                        <span class="fw-bold text-uppercase">Hash</span>
-                        <svg viewBox="0 0 24 24" class="ms-1">
-                          <path fill="none" d="M0 0h24v24H0z" />
-                          <path
-                            fill="currentColor"
-                            d="M10 3v2H5v14h14v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6zm7.707 4.707L12 13.414 10.586 12l5.707-5.707L13 3h8v8l-3.293-3.293z"
-                          />
-                        </svg>
-                      </span>
+                <div class="accordion-body text-md-center">
+                  <div class="row g-2 align-items-center">
+                    <div class="col-md-2">
+                      <strong>UT.8F779EB<br />F42773159</strong>
                     </div>
-                    <div class="col-sm-6 col-md-4">
-                      <strong>UT.8F779EBF42773159</strong>
+                    <div class="col-md-3">
+                      <strong class="badge">Main Wallet</strong>
                     </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-md-4">
+                      <strong>Investment UI.1Aml5fO w_mZu80GH ($10000)</strong>
+                    </div>
+                    <div class="col-md-3">
                       <time>2021-06-16 17:51:56</time>
-                    </div>
-                    <div class="col-6 col-md-3">
-                      <strong
-                        class="d-flex align-items-center justify-content-end justify-content-sm-start justify-content-md-center"
-                      >
-                        <svg viewBox="0 0 24 24" class="me-1">
-                          <path fill="none" d="M0 0h24v24H0z" />
-                          <path
-                            fill="currentColor"
-                            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-.997-4L6.76 11.757l1.414-1.414 2.829 2.829 5.656-5.657 1.415 1.414L11.003 16z"
-                          />
-                        </svg>
-                        Completed
-                      </strong>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="app-card accordion-item accordion-item-success mt-3">
+            <div class="app-card accordion-item mt-3">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button"
@@ -282,16 +230,11 @@
                   aria-expanded="true"
                   aria-controls="collapseTwo"
                 >
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="../assets/img/icons/dai-bitcoin-4.png"
-                      alt="Dai bitcoin exchange"
-                      class="me-2"
-                    />
-                    <span class="app-card-title text-uppercase">Sell DAI</span>
-                  </div>
+                  <span class="app-card-title text-uppercase"
+                    >Referral income</span
+                  >
                   <span class="app-dai-value order-2">
-                    <strong>30,00</strong>
+                    <strong>45,00</strong>
                     <span class="fw-bold">DAI</span>
                   </span>
                 </button>
@@ -301,39 +244,105 @@
                 class="accordion-collapse collapse show"
                 data-bs-parent="#accordion"
               >
-                <div class="accordion-body">
-                  <div class="row g-2 align-items-center text-md-center">
-                    <div class="col-sm-6 col-md-2">
-                      <span class="badge d-inline-flex align-items-center">
-                        <span class="fw-bold text-uppercase">Hash</span>
-                        <svg viewBox="0 0 24 24" class="ms-1">
-                          <path fill="none" d="M0 0h24v24H0z" />
-                          <path
-                            fill="currentColor"
-                            d="M10 3v2H5v14h14v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6zm7.707 4.707L12 13.414 10.586 12l5.707-5.707L13 3h8v8l-3.293-3.293z"
-                          />
-                        </svg>
-                      </span>
+                <div class="accordion-body text-md-center">
+                  <div class="row g-2 align-items-center">
+                    <div class="col-md-2">
+                      <strong>UT.8F779EB<br />F42773159</strong>
                     </div>
-                    <div class="col-sm-6 col-md-4">
-                      <strong>UT.8F779EBF42773159</strong>
+                    <div class="col-md-3">
+                      <strong class="badge">Main Wallet</strong>
                     </div>
-                    <div class="col-6 col-md-3">
+                    <div class="col-md-4">
+                      <strong>Investment UI.1Aml5fO w_mZu80GH ($10000)</strong>
+                    </div>
+                    <div class="col-md-3">
                       <time>2021-06-16 17:51:56</time>
                     </div>
-                    <div class="col-6 col-md-3">
-                      <strong
-                        class="d-flex align-items-center justify-content-end justify-content-sm-start justify-content-md-center"
-                      >
-                        <svg viewBox="0 0 24 24" class="me-1">
-                          <path fill="none" d="M0 0h24v24H0z" />
-                          <path
-                            fill="currentColor"
-                            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-.997-4L6.76 11.757l1.414-1.414 2.829 2.829 5.656-5.657 1.415 1.414L11.003 16z"
-                          />
-                        </svg>
-                        Completed
-                      </strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="app-card accordion-item mt-3">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                >
+                  <span class="app-card-title text-uppercase"
+                    >Manual adjusment</span
+                  >
+                  <span class="app-dai-value order-2">
+                    <strong>300,00</strong>
+                    <span class="fw-bold">DAI</span>
+                  </span>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="accordion-body text-md-center">
+                  <div class="row g-2 align-items-center">
+                    <div class="col-md-2">
+                      <strong>UT.8F779EB<br />F42773159</strong>
+                    </div>
+                    <div class="col-md-3">
+                      <strong class="badge">Main Wallet</strong>
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Investment UI.1Aml5fO w_mZu80GH ($10000)</strong>
+                    </div>
+                    <div class="col-md-3">
+                      <time>2021-06-16 17:51:56</time>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="app-card accordion-item accordion-item-danger mt-3">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <span class="app-card-title text-uppercase"
+                    >Binary income</span
+                  >
+                  <span class="app-dai-value order-2">
+                    <strong>-730,00</strong>
+                    <span class="fw-bold">DAI</span>
+                  </span>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="accordion-body text-md-center">
+                  <div class="row g-2 align-items-center">
+                    <div class="col-md-2">
+                      <strong>UT.8F779EB<br />F42773159</strong>
+                    </div>
+                    <div class="col-md-3">
+                      <strong class="badge">Main Wallet</strong>
+                    </div>
+                    <div class="col-md-4">
+                      <strong>Investment UI.1Aml5fO w_mZu80GH ($10000)</strong>
+                    </div>
+                    <div class="col-md-3">
+                      <time>2021-06-16 17:51:56</time>
                     </div>
                   </div>
                 </div>

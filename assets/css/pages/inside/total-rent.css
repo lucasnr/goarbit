@@ -1,0 +1,74 @@
+.app-card.app-card--reverse {
+  background-color: #6da9d3;
+  border-bottom-color: #fff;
+  color: #fff;
+}
+
+.app-card.app-card--reverse .title {
+  color: inherit;
+}
+
+.app-card.form-select {
+  color: #21456c;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.app-card.accordion-item .accordion-body {
+  padding-bottom: 0.5rem;
+}
+
+.app-card.accordion-item .badge {
+  background-color: #fff;
+  color: #21456c;
+  font-size: inherit;
+}
+
+.app-card.accordion-item.accordion-item-danger {
+  background-color: #db072a;
+  border-bottom-color: #db072a;
+}
+
+.app-card.accordion-item.accordion-item-danger .app-card-title {
+  color: #db072a;
+}
+
+.app-card.accordion-item.accordion-item-danger .app-dai-value {
+  color: #db072a;
+}
+
+.app-card.accordion-item.accordion-item-danger .badge {
+  color: #db072a;
+}
+
+.app-card.accordion-item .accordion-button {
+  position: relative;
+}
+
+.app-card.accordion-item .accordion-button::after {
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 575px) {
+  .app-card.accordion-item .app-card-title {
+    font-size: 0.875rem;
+  }
+
+  .app-card.accordion-item .app-dai-value span {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .app-card.accordion-item .app-dai-value {
+    font-size: 1.25rem;
+  }
+
+  .app-card.accordion-item .accordion-button::after {
+    left: 50%;
+    margin: 0px;
+    position: absolute;
+  }
+}
