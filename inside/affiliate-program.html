@@ -29,7 +29,10 @@
     <link rel="stylesheet" href="../assets/css/pages/inside/common.css" />
     <link rel="stylesheet" href="../assets/css/pages/inside/account.css" />
     <link rel="stylesheet" href="../assets/css/block/inside/form.css" />
-    <link rel="stylesheet" href="../assets/css/pages/inside/gold-club.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/pages/inside/affiliate-program.css"
+    />
   </head>
   <body class="app">
     <div class="container d-flex flex-column flex-grow-1">
@@ -98,22 +101,22 @@
                   <span>Rent DAI</span>
                 </a>
               </li>
-              <li class="active">
+              <li>
                 <a href="./gold-club.html">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/navbar/gold-club-active.png"
+                      src="../assets/img/icons/navbar/gold-club.png"
                       alt="Gold club icon"
                     />
                   </div>
                   <span>Gold Club</span>
                 </a>
               </li>
-              <li>
+              <li class="active">
                 <a href="./affiliate-program.html">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/navbar/affiliate-program.png"
+                      src="../assets/img/icons/navbar/affiliate-program-active.png"
                       alt="Affiliate program icon"
                     />
                   </div>
@@ -156,116 +159,140 @@
             </ul>
           </nav>
 
-          <div class="row gx-4 gy-3 mb-5 mb-sm-3">
-            <div class="col-sm-6 text-center">
-              <div class="app-card py-4 app-card--reverse">
-                <img
-                  src="../assets/img/icons/gold-club.png"
-                  alt="Gold club icon"
-                />
-                <h3 class="app-card-title px-3 mt-3">
-                  Make a contribuition for special benefits!
-                </h3>
-              </div>
-            </div>
-            <div class="col-sm-6 text-center">
-              <div class="app-card app-card--amount py-5 pt-sm-4 py-md-3">
-                <h3 class="app-card-title">Amount Applied</h3>
-                <h3 class="app-dai-value justify-content-center my-2">
-                  <strong>50,00</strong>
-                  <span>DAI</span>
-                </h3>
-                <span>5% of all active contracts rent.</span>
-                <ul class="list-unstyled mb-0 text-start mt-3">
-                  <li>1.5% ROI</li>
-                  <li>10% Referral Bonus</li>
-                  <li>10% Matching Bonus</li>
-                </ul>
-                <button class="btn">
-                  <img
-                    src="../assets/img/icons/square.png"
-                    alt="Square icon"
-                    class="me-1"
-                  />
-                  Contribute now
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="app-card me-auto mb-3">
-            <h2 class="title mb-0">History</h2>
-          </div>
-
-          <div class="accordion" id="accordion">
-            <div class="app-card accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  <span class="app-card-title text-uppercase">
-                    Contribuition
-                  </span>
-                  <span class="app-dai-value order-2">
-                    <strong>30,00</strong>
-                    <span class="fw-bold">DAI</span>
-                  </span>
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordion"
-              >
-                <div class="accordion-body">
-                  <div
-                    class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center"
-                  >
-                    <strong>Gold Club</strong>
-                    <span class="badge my-2 my-sm-0">Contribuition Wallet</span>
-                    <time>2021-06-16 17:51:56</time>
+          <div class="row gy-3 gx-4">
+            <div class="col-sm-6">
+              <div class="app-card app-card--control">
+                <div class="app-card-arrow">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="currentColor"
+                      d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z"
+                    />
+                  </svg>
+                </div>
+                <div class="app-card-content">
+                  <div class="row">
+                    <div class="col-4">
+                      <h4 class="app-card-title">Total</h4>
+                      <h5 class="app-card-dai">0</h5>
+                    </div>
+                    <div class="col-4">
+                      <h4 class="app-card-title">Available</h4>
+                      <h5 class="app-card-dai">0</h5>
+                    </div>
+                    <div class="col-4">
+                      <h4 class="app-card-title">Accounts</h4>
+                      <strong>0</strong>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="app-card accordion-item mt-3">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  <span class="app-card-title text-uppercase">
-                    Contribuition
-                  </span>
-                  <span class="app-dai-value order-2">
-                    <strong>45,00</strong>
-                    <span class="fw-bold">DAI</span>
-                  </span>
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordion"
-              >
-                <div class="accordion-body">
-                  <div
-                    class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center"
-                  >
-                    <strong>Gold Club</strong>
-                    <span class="badge my-2 my-sm-0">Contribuition Wallet</span>
-                    <time>2021-06-16 17:51:56</time>
+            <div class="col-sm-6">
+              <div class="app-card app-card--control">
+                <div class="app-card-content">
+                  <div class="row">
+                    <div class="col-4">
+                      <h4 class="app-card-title">Total</h4>
+                      <h5 class="app-card-dai">0</h5>
+                    </div>
+                    <div class="col-4">
+                      <h4 class="app-card-title">Available</h4>
+                      <h5 class="app-card-dai">0</h5>
+                    </div>
+                    <div class="col-4">
+                      <h4 class="app-card-title">Accounts</h4>
+                      <strong>0</strong>
+                    </div>
                   </div>
+                </div>
+                <div class="app-card-arrow">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="currentColor"
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <header class="app-card app-card--header">
+                <div
+                  class="d-flex flex-column flex-sm-row flex-wrap align-items-sm-center justify-content-between py-2"
+                >
+                  <div class="d-flex align-items-center mb-3 mb-sm-0">
+                    <img
+                      src="../assets/img/icons/gold-club.png"
+                      alt="Gold club icon"
+                    />
+                    <div class="d-flex flex-column">
+                      <h3 class="app-card-title">Gold Club</h3>
+                      <span class="text-uppercase">Active</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3 mb-sm-0">
+                    <img
+                      src="../assets/img/icons/rewards.png"
+                      alt="Rewards icon"
+                    />
+                    <div class="d-flex flex-column">
+                      <h3 class="app-card-title">Rewards Points</h3>
+                      <span>497,755</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3 mb-sm-0">
+                    <img
+                      src="../assets/img/icons/menu/affiliate-program.png"
+                      alt="Affiliate program icon"
+                    />
+                    <div class="d-flex flex-column">
+                      <h3 class="app-card-title">Binary</h3>
+                      <span>Active</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/img/icons/calendar.png"
+                      alt="Calendar icon"
+                    />
+                    <div class="d-flex flex-column">
+                      <h3 class="app-card-title">Cycle</h3>
+                      <span>24 Days 17 hours left</span>
+                    </div>
+                  </div>
+                </div>
+              </header>
+            </div>
+
+            <div class="col-6">
+              <form class="app-card app-card--form">
+                <button class="btn">GO</button>
+                <input type="text" class="form-control" placeholder="Search" />
+              </form>
+            </div>
+
+            <div class="col-6">
+              <form class="app-card app-card--form">
+                <button class="btn">Change</button>
+                <select type="text" class="form-control form-select">
+                  <option selected>Left</option>
+                </select>
+              </form>
+            </div>
+
+            <div class="col-12">
+              <div class="app-card app-card--graph py-4">
+                <div class="btn">Go back</div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <img
+                    src="../assets/img/graph-2.png"
+                    alt="Replace with real graph"
+                    class="img-fluid"
+                  />
                 </div>
               </div>
             </div>
