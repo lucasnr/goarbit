@@ -1,0 +1,22 @@
+.app-main .app-dai-value {
+  font-size: 1.5rem;
+}
+
+.app-card.app-card--wallet {
+  background-image: url(../../../img/dai-coin.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  color: #21456c;
+  font-size: 1rem;
+}
+
+.app-card.app-card--new-contract {
+  background-color: #0c0f5f;
+  color: #fff;
+}
+
+.app-card.app-card--new-contract .app-card-title {
+  color: inherit;
+  font-size: 1.125rem;
+}
