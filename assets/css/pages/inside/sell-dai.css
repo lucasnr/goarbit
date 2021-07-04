@@ -21,6 +21,10 @@
   padding-top: 0.5rem;
 }
 
+.app-card.form .btn img {
+  width: 1.25rem;
+}
+
 .app-card.accordion-item .accordion-body {
   padding-bottom: 0.5rem;
 }

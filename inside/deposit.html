@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="../assets/css/pages/inside/common.css" />
     <link rel="stylesheet" href="../assets/css/pages/inside/account.css" />
     <link rel="stylesheet" href="../assets/css/block/inside/form.css" />
-    <link rel="stylesheet" href="../assets/css/pages/inside/rent-dai.css" />
+    <link rel="stylesheet" href="../assets/css/pages/inside/deposit.css" />
   </head>
   <body class="app">
     <div class="container d-flex flex-column flex-grow-1">
@@ -76,22 +76,22 @@
                   <span>Dashboard</span>
                 </a>
               </li>
-              <li>
+              <li class="active">
                 <a href="./deposit.html">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/navbar/deposit.png"
+                      src="../assets/img/icons/navbar/deposit-active.png"
                       alt="Deposit icon"
                     />
                   </div>
                   <span>Deposit</span>
                 </a>
               </li>
-              <li class="active">
+              <li>
                 <a href="./rent-dai.html">
                   <div class="app-navbar-icon">
                     <img
-                      src="../assets/img/icons/navbar/rent-sell-dai-active.png"
+                      src="../assets/img/icons/navbar/rent-sell-dai.png"
                       alt="Rent and sell DAI icon"
                     />
                   </div>
@@ -156,40 +156,102 @@
             </ul>
           </nav>
 
-          <div class="app-card me-auto mb-3">
-            <h2 class="title mb-0">Rent DAI</h2>
+          <header class="app-header d-flex flex-wrap align-items-center">
+            <div class="me-5 mb-3 mb-md-0 mt-sm-0">
+              <h2 class="title">Deposit DAI</h2>
+              <ul class="app-header-coins list-unstyled mb-0">
+                <li>
+                  <img src="../assets/img/coins/1.png" />
+                </li>
+              </ul>
+            </div>
+            <div class="order-2 order-md-1 me-5 mb-3 mb-md-0">
+              <h2 class="title">Purchase DAI</h2>
+              <ul class="app-header-coins list-unstyled mb-0">
+                <li>
+                  <img src="../assets/img/coins/2.png" />
+                </li>
+                <li>
+                  <img src="../assets/img/coins/3.png" />
+                </li>
+                <li>
+                  <img src="../assets/img/coins/4.png" />
+                </li>
+                <li>
+                  <img src="../assets/img/coins/5.png" />
+                </li>
+              </ul>
+            </div>
+            <div class="me-5 mb-3 mb-md-0 mt-sm-0 order-1">
+              <h2 class="title">Contribute do Gold Club</h2>
+              <ul class="app-header-coins list-unstyled mb-0">
+                <li>
+                  <img src="../assets/img/coins/6.png" />
+                </li>
+              </ul>
+            </div>
+          </header>
+
+          <div class="app-card me-auto mb-3 mt-4 mt-md-5">
+            <h2 class="title mb-0">Purchase DAI</h2>
           </div>
-          <div class="row gx-4 gy-3">
-            <div class="col-sm-5 text-center">
-              <div class="app-card app-card--new-contract py-4 h-100">
+          <div class="row gx-4">
+            <div class="col-md-6 text-center mb-5 mb-md-0">
+              <div class="app-card app-card--purchase">
                 <img
-                  src="../assets/img/icons/contract-plus.png"
-                  alt="Contract icon"
+                  src="../assets/img/icons/dai-bitcoin-2.png"
+                  alt="Dai bitcoin exchange"
                 />
-                <h3 class="app-card-title my-3">
-                  New Contract <span class="text-nowrap">Rent DAI</span>
-                </h3>
-                <span>Rent will start to gain in the next 48 hours.</span>
+                <span class="d-block mt-3">
+                  Enter the amount below to purchase
+                </span>
+                <div class="app-card form">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Amount"
+                  />
+                  <small class="d-block my-2">Current DAI Wallet Balance</small>
+                  <span class="app-dai-value justify-content-center mb-2">
+                    <strong>5.345</strong>
+                    <span>DAI</span>
+                  </span>
+                  <button class="btn" type="submit">Purchase now</button>
+                </div>
               </div>
             </div>
-            <div class="col-sm-7">
-              <div class="app-card app-card--wallet py-3">
-                <h3 class="app-card-title">DAI Wallet</h3>
-                <span class="mb-2">Balance</span>
-                <span class="app-dai-value">
-                  <strong>3.000.000,00</strong>
-                  <span>DAI</span>
+            <div class="col-md-6 text-center mt-5 mt-md-0 pt-4 pt-md-0">
+              <div class="app-card app-card--qrcode py-4">
+                <img
+                  src="../assets/img/qrcode.png"
+                  alt="Replace with real QRCode"
+                />
+                <div class="d-flex align-items-center mt-3 mb-2">
+                  <strong class="me-1">
+                    3GVWgbMLm3y41qKGFmuh25176eX89SJ3Th
+                  </strong>
+                  <svg viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z"
+                    />
+                  </svg>
+                </div>
+                <span>Waiting for payment...</span>
+                <div class="progress w-100 my-3">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 45%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <span>
+                  Please alow at least 1 minute for payment verification.
                 </span>
               </div>
-
-              <form class="app-card form mt-3">
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  placeholder="Enter Amount"
-                />
-                <button class="btn" type="submit">Rent now</button>
-              </form>
             </div>
           </div>
         </main>
