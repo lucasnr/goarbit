@@ -1,0 +1,52 @@
+.app-main .app-dai-value {
+  font-size: 1.5rem;
+}
+
+.app-card.app-card--wallet {
+  background-image: url(../../../img/dai-coin.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  color: #21456c;
+  font-size: 1rem;
+}
+
+.app-card.form .form-control {
+  font-size: 0.875rem;
+}
+
+.app-card.form .btn {
+  background-color: #31af20;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.app-card.accordion-item .accordion-body {
+  padding-bottom: 0.5rem;
+}
+
+.app-card.accordion-item-warning {
+  background-color: #f5ac36;
+  border-bottom-color: #f5ac36;
+}
+
+.app-card.accordion-item-success {
+  background-color: #31af20;
+  border-bottom-color: #31af20;
+}
+
+.app-card.accordion-item .badge {
+  background-color: #fff;
+  color: #21456c;
+}
+
+.app-card.accordion-item .badge svg {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+@media (max-width: 392px) {
+  .app-card.accordion-item .app-dai-value span {
+    display: none;
+  }
+}

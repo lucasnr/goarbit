@@ -21,7 +21,6 @@
 }
 
 .app-slider .app-dai-value {
-  color: #f5ac36;
   font-size: 0.875rem;
 }
 
@@ -32,10 +31,6 @@
 .app-slider .app-dai-value:nth-of-type(2) {
   font-size: 1.125rem;
   line-height: 1.375;
-}
-
-.app-dai-value {
-  color: #21456c;
 }
 
 .app-card {
@@ -56,10 +51,6 @@
 
 .app-card.app-card--total-earnings {
   padding-bottom: 0px;
-}
-
-.app-card.app-card--total-earnings .app-dai-value span {
-  color: #f5ac36;
 }
 
 .app-card.app-card--total-earnings .app-card-footer {

@@ -164,7 +164,8 @@
   width: 100%;
 }
 
-.app .btn:hover {
+.app .btn:hover,
+.app .btn:focus {
   filter: brightness(0.75);
 }
 
@@ -192,7 +193,7 @@
 
 .app-dai-value {
   align-items: center;
-  color: inherit;
+  color: #21456c;
   display: flex;
   font-size: 1rem;
   font-weight: 500;
@@ -212,6 +213,43 @@
 .app-dai-value strong {
   margin-left: 0.375rem;
   margin-right: 0.125rem;
+}
+
+.app-dai-value span {
+  color: #f5ac36;
+}
+
+.app-main .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z' fill='rgba(0,51,89,1)'/%3E%3C/svg%3E");
+}
+
+.app-card.accordion-item {
+  background-color: #21456c;
+  border-bottom-color: #21456c;
+  border-bottom-width: 0.375rem !important;
+  border-radius: 0.75rem !important;
+  border-width: 0px;
+  color: #fff;
+  font-weight: 400;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.app-card.accordion-item .accordion-button {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: none !important;
+  color: #21456c;
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.app-card.accordion-item .accordion-button::after {
+  background-size: cover;
+  height: 1.5rem;
+  margin-left: 0px;
+  width: 1.5rem;
 }
 
 @media (min-width: 576px) {
