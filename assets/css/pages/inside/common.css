@@ -252,6 +252,16 @@
   width: 1.5rem;
 }
 
+@media (max-width: 575px) {
+  .app-card.accordion-item .app-card-title {
+    font-size: 0.875rem;
+  }
+
+  .app-card.accordion-item .app-dai-value span {
+    display: none;
+  }
+}
+
 @media (min-width: 576px) {
   .app-search {
     max-width: 25rem;

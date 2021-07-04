@@ -1,5 +1,6 @@
-.app-main .app-dai-value {
-  font-size: 1.5rem;
+.title {
+  padding-bottom: 0.1875rem;
+  padding-top: 0.1875rem;
 }
 
 .app-card.app-card--wallet {
@@ -9,6 +10,10 @@
   background-size: 5rem;
   color: #21456c;
   font-size: 1rem;
+}
+
+.app-card.app-card--wallet .app-dai-value {
+  font-size: 1.5rem;
 }
 
 .app-card.form .form-control {
@@ -52,5 +57,11 @@
 @media (max-width: 392px) {
   .app-card.accordion-item .app-dai-value span {
     display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .app-card.accordion-item .app-dai-value {
+    font-size: 1.25rem;
   }
 }
