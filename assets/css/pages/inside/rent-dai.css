@@ -16,6 +16,10 @@
   color: #fff;
 }
 
+.app-card.app-card--new-contract img {
+  width: 5.5rem;
+}
+
 .app-card.app-card--new-contract .app-card-title {
   color: inherit;
   font-size: 1.125rem;
