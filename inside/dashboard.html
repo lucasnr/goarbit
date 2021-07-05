@@ -25,6 +25,11 @@
       crossorigin="anonymous"
     ></script>
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <link rel="stylesheet" href="../assets/css/pages/inside/common.css" />
     <link rel="stylesheet" href="../assets/css/pages/inside/account.css" />
@@ -156,56 +161,116 @@
           </nav>
 
           <header class="app-slider mb-4">
-            <div class="d-flex align-items-center justify-content-between">
-              <svg viewBox="0 0 24 24" class="app-slider-arrow">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  fill="currentColor"
-                  d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"
-                />
-              </svg>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="d-flex justify-content-center align-items-end">
+                    <img
+                      class="d-none d-sm-block"
+                      src="../assets/img/graph-1.png"
+                      alt="Replace with real graph"
+                    />
+                    <img
+                      class="d-none d-sm-block mx-3"
+                      src="../assets/img/icons/dai-clipboard.png"
+                      alt="DAI Clipboard"
+                    />
+                    <div class="d-flex flex-column">
+                      <div class="app-dai-value">
+                        <strong>5,000</strong>
+                        <span>DAI</span>
+                      </div>
+                      <div class="app-dai-value mt-2">
+                        <strong>5,500,000</strong>
+                        <span>DAI</span>
+                      </div>
+                    </div>
 
-              <div class="d-flex align-items-end">
-                <img
-                  class="d-none d-sm-block"
-                  src="../assets/img/graph-1.png"
-                  alt="Replace with real graph"
-                />
-                <img
-                  class="d-none d-sm-block mx-3"
-                  src="../assets/img/icons/dai-clipboard.png"
-                  alt="DAI Clipboard"
-                />
-                <div class="d-flex flex-column">
-                  <div class="app-dai-value">
-                    <strong>5,000</strong>
-                    <span>DAI</span>
-                  </div>
-                  <div class="app-dai-value mt-2">
-                    <strong>5,500,000</strong>
-                    <span>DAI</span>
+                    <div class="d-flex ms-2 ms-sm-4">
+                      <svg viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"
+                          fill="rgba(83,189,0,1)"
+                        />
+                      </svg>
+                      <span>10%</span>
+                    </div>
                   </div>
                 </div>
-
-                <div class="d-flex ms-2 ms-sm-4">
-                  <svg viewBox="0 0 24 24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"
-                      fill="rgba(83,189,0,1)"
+                <div class="swiper-slide">
+                  <div class="d-flex justify-content-center align-items-end">
+                    <img
+                      class="d-none d-sm-block"
+                      src="../assets/img/graph-1.png"
+                      alt="Replace with real graph"
                     />
-                  </svg>
-                  <span>10%</span>
+                    <img
+                      class="d-none d-sm-block mx-3"
+                      src="../assets/img/icons/dai-clipboard.png"
+                      alt="DAI Clipboard"
+                    />
+                    <div class="d-flex flex-column">
+                      <div class="app-dai-value">
+                        <strong>5,000</strong>
+                        <span>DAI</span>
+                      </div>
+                      <div class="app-dai-value mt-2">
+                        <strong>5,500,000</strong>
+                        <span>DAI</span>
+                      </div>
+                    </div>
+
+                    <div class="d-flex ms-2 ms-sm-4">
+                      <svg viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"
+                          fill="rgba(83,189,0,1)"
+                        />
+                      </svg>
+                      <span>10%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="d-flex justify-content-center align-items-end">
+                    <img
+                      class="d-none d-sm-block"
+                      src="../assets/img/graph-1.png"
+                      alt="Replace with real graph"
+                    />
+                    <img
+                      class="d-none d-sm-block mx-3"
+                      src="../assets/img/icons/dai-clipboard.png"
+                      alt="DAI Clipboard"
+                    />
+                    <div class="d-flex flex-column">
+                      <div class="app-dai-value">
+                        <strong>5,000</strong>
+                        <span>DAI</span>
+                      </div>
+                      <div class="app-dai-value mt-2">
+                        <strong>5,500,000</strong>
+                        <span>DAI</span>
+                      </div>
+                    </div>
+
+                    <div class="d-flex ms-2 ms-sm-4">
+                      <svg viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"
+                          fill="rgba(83,189,0,1)"
+                        />
+                      </svg>
+                      <span>10%</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <svg viewBox="0 0 24 24" class="app-slider-arrow">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  fill="currentColor"
-                  d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
-                />
-              </svg>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </header>
 
@@ -529,6 +594,16 @@
       </footer>
 
       <script src="../assets/js/account-menu.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".app-slider .swiper-container", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
     </div>
   </body>
 </html>

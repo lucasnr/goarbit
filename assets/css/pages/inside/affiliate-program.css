@@ -74,6 +74,7 @@
 .app-card.app-card--form .btn {
   background-color: #6da9d3;
   border-radius: 0.75rem;
+  box-shadow: none !important;
   width: 6rem;
 }
 
