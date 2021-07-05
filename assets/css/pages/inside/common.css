@@ -54,6 +54,35 @@
   width: 1.5rem;
 }
 
+.app-aside .dropdown button {
+  background-color: transparent;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.app-aside .dropdown button::after {
+  content: none;
+}
+
+.app-aside .dropdown-menu {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+
+.app-aside .dropdown-item {
+  background-color: transparent !important;
+  margin-top: 0.5rem;
+  padding: 0px;
+}
+
+.app-flag {
+  border-radius: 0.75rem;
+  height: 1.25rem;
+  width: 1.625rem;
+}
+
 .app-user {
   align-items: center;
   color: #fff;
