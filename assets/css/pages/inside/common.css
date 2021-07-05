@@ -54,71 +54,6 @@
   width: 1.5rem;
 }
 
-.app-aside .dropdown button {
-  background-color: transparent;
-  border: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.app-aside .dropdown button::after {
-  content: none;
-}
-
-.app-aside .dropdown-menu {
-  background-color: transparent;
-  border: none;
-  padding: 0px;
-}
-
-.app-aside .dropdown-item {
-  background-color: transparent !important;
-  margin-top: 0.5rem;
-  padding: 0px;
-}
-
-.app-flag {
-  border-radius: 0.75rem;
-  height: 1.25rem;
-  width: 1.625rem;
-}
-
-.app-user {
-  align-items: center;
-  color: #fff;
-  display: flex;
-  font-weight: 500;
-}
-
-.app-user .app-user-avatar {
-  border-radius: 50%;
-  cursor: pointer;
-  height: 2rem;
-  margin-left: 0.75rem;
-  position: relative;
-  width: 2rem;
-}
-
-.app-user .app-user-avatar img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-}
-
-.app-user .app-user-avatar::before {
-  background-color: #fff;
-  bottom: -5%;
-  border-radius: 50%;
-  content: " ";
-  display: block;
-  left: -10%;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-
 .app-footer {
   color: #fff;
   font-size: 0.75rem;
@@ -308,19 +243,7 @@
   }
 }
 
-@media (min-width: 768px) {
-  .app-aside {
-    margin: auto;
-    max-width: 42.625rem;
-  }
-}
-
 @media (min-width: 992px) {
-  .app-aside {
-    margin: 0px;
-    max-width: 14.625rem;
-  }
-
   .app-navbar ul {
     margin-top: 6rem;
   }
