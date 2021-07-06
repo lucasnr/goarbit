@@ -27,15 +27,15 @@
 
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <link rel="stylesheet" href="../assets/css/pages/inside/common.css" />
-    <link rel="stylesheet" href="../assets/css/pages/inside/account.css" />
+    <link rel="stylesheet" href="../assets/css/pages/inside/aside.css" />
     <link rel="stylesheet" href="../assets/css/block/inside/form.css" />
   </head>
   <body class="app">
     <div class="container d-flex flex-column flex-grow-1">
       <div
-        class="d-flex flex-column-reverse flex-lg-row align-items-center align-items-lg-start justify-content-between"
+        class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-end"
       >
-        <main class="app-main mb-5">
+        <main class="app-main mb-5 me-lg-auto">
           <aside class="d-flex flex-column flex-sm-row align-items-center">
             <img
               class="app-logo me-sm-3 mb-3 mb-sm-0"
@@ -178,16 +178,113 @@
         </main>
 
         <aside class="app-aside w-100 ms-auto mb-4 mb-lg-0">
-          <header class="d-flex justify-content-between align-items-center">
-            <img src="../assets/img/english.png" />
+          <header
+            class="app-aside-user d-flex justify-content-end align-items-center"
+          >
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle"
+                type="button"
+                id="dropdown-language"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img class="app-flag" src="../assets/img/english.png" />
+              </button>
+              <ul
+                class="dropdown-menu flex-column align-items-end align-items-md-start align-items-lg-end"
+                aria-labelledby="dropdown-language"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="app-flag" src="../assets/img/portuguese.png" />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="app-flag" src="../assets/img/spanish.png" />
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-            <div class="app-user">
+            <div class="app-user ms-3">
               <span class="app-user-name">Gabriel</span>
               <div class="app-user-avatar">
                 <img src="../assets/img/avatar.png" alt="Gabriel" />
               </div>
             </div>
           </header>
+          <div class="app-aside-content mb-3 my-lg-0">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="app-card app-card--new-rent">
+                  <div class="d-flex flex-column align-items-center">
+                    <img
+                      src="../assets/img/icons/write.png"
+                      alt="Writting document icon"
+                      class="d-block m-0"
+                    />
+                    <h3 class="app-card-title my-3">
+                      <strong>5.000</strong>
+                      <span>DAI</span>
+                    </h3>
+
+                    <a href="#" class="btn">New Rent</a>
+                  </div>
+                  <hr class="my-4" />
+                  <footer class="app-card-footer">
+                    <div class="d-flex align-items-center text-center">
+                      <strong class="ms-auto me-1">2</strong>
+                      <span class="me-auto ms-1">Total Active Contract</span>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-12">
+                <div class="app-card">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/img/icons/diamond.png"
+                      alt="Diamond executive level icon"
+                    />
+                    <div class="d-flex flex-column">
+                      <h3 class="app-card-title">Executive Level</h3>
+                      <span>Diamond</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-12">
+                <div class="app-card">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/img/icons/rewards.png"
+                      alt="Rewards icon"
+                    />
+                    <div class="d-flex flex-column">
+                      <h3 class="app-card-title">Rewards Points</h3>
+                      <span>5.000.000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-12">
+                <div class="app-card">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../assets/img/icons/calendar.png"
+                      alt="Calendar icon"
+                    />
+                    <div class="d-flex flex-column">
+                      <h3 class="app-card-title">27 Days</h3>
+                      <span>15 hours left</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <aside class="app-account-menu">
             <header class="app-account-menu-header">
